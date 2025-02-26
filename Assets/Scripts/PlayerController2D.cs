@@ -15,7 +15,7 @@ public class PlayerController2D : MonoBehaviour
 
     public List<IngredientType> inventory = new List<IngredientType>();
     public UIInventory uiInventory;
-
+    public float speed = 30f;
     public CameraFollow cameraFollow;
     private float horizontalInput = 0f;
 
@@ -35,7 +35,7 @@ public class PlayerController2D : MonoBehaviour
         {
             SetHorizontalInput(-1f);
 
-            mapController.SetMoveSpeed(-30f); // Рух ліворуч
+            mapController.SetMoveSpeed(-speed); // Рух ліворуч
             SetAnimationSpeed(1f);
             SetFlipDirection(true);
         }
@@ -44,7 +44,7 @@ public class PlayerController2D : MonoBehaviour
         {
             SetHorizontalInput(1f);
 
-            mapController.SetMoveSpeed(30f); // Рух праворуч
+            mapController.SetMoveSpeed(speed); // Рух праворуч
             SetAnimationSpeed(1f);
             SetFlipDirection(false);
         }
