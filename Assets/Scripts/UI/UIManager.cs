@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class UIManager : MonoBehaviour
     private ICollectable currentCollectable; // Поточний об'єкт для збору
     public Button preparationButton;
     private KitchenTable currentTable;
-
+    public TMP_Text scoreAsset;
+    
     public void ShowPreparationButton(KitchenTable table)
     {
         currentTable = table;
@@ -66,4 +68,6 @@ public class UIManager : MonoBehaviour
             HidePickupButton();
         }
     }
+    
+    
 }

@@ -13,7 +13,7 @@ public class PlayerController2D : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
 
-    public List<IngredientType> inventory = new List<IngredientType>(); // Список зібраних інгредієнтів
+    public List<IngredientType> inventory = new List<IngredientType>();
     public UIInventory uiInventory;
 
     public CameraFollow cameraFollow;

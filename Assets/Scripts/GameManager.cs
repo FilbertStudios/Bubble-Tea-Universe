@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public PreparationUI preparationUI; // Інтерфейс приготування
     public PlayerController2D playerController; // Гравець
     public KitchenTable kitchenTable; // Кухонний стіл
-
+    public int Score;
     private void Awake()
     {
         // Ініціалізація синглтона
@@ -27,6 +27,11 @@ public class GameManager : MonoBehaviour
     public void OpenPreparationUI()
     {
         preparationUI.gameObject.SetActive(true);
+    }
+
+    public void AddScore()
+    {
+        
     }
 
     public void ClosePreparationUI()
